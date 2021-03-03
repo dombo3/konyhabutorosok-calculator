@@ -33,7 +33,7 @@ export default function Calculator({ handleClose, inModal = false }) {
           X
         </button>
       )}
-      <h1>Online kalkulátor*</h1>
+      <h2>Online kalkulátor*</h2>
       <form>
         <label htmlFor={"materialCost"}>
           Konyhabútorgyártás anyagköltsége (bruttó Ft)
@@ -62,7 +62,7 @@ export default function Calculator({ handleClose, inModal = false }) {
           }}
         ></input>
       </form>
-      <p className="ephasize">
+      <p className="emphasize">
         Számla teljes összege:{" "}
         <span>
           {Math.round(
@@ -70,9 +70,9 @@ export default function Calculator({ handleClose, inModal = false }) {
           ).toLocaleString() + " Ft"}
         </span>
       </p>
-      <p className="ephasize">
+      <p className="emphasize">
         Becsült igényelhető támogatás összege :{" "}
-        <span className="highlite">
+        <span className="highlight">
           {Math.round(calculateFinancialSupport()).toLocaleString() + " Ft"}
         </span>
       </p>

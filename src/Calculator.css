@@ -1,5 +1,5 @@
 #calculator {
-  max-width: 550px;
+  max-width: 620px;
   margin: 0 auto;
   color: #ffffff;
   background-color: #ff7301;
@@ -10,9 +10,15 @@
   position: relative;
 }
 
+#calculator h2 {
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+
 #calculator form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 #calculator form input {
@@ -28,20 +34,21 @@
   padding-left: 10px;
 }
 
-#calculator form label {
-  margin-top: 10px;
-}
-
-#calculator input:focus {
+#calculator form input:focus {
   outline: none;
   box-shadow: 0 0 0 1pt #605b50;
 }
 
-#calculator .ephasize {
+#calculator .emphasize {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
-#calculator .highlite {
+
+#calculator > p:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
+#calculator .highlight {
   background-color: #fff;
   color: #605b50;
   padding: 1px 10px 1px 10px;
